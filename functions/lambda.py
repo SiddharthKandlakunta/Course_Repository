@@ -46,6 +46,10 @@ grades = list(map(grade, marks))
 
 #grades = list(map(grade, marks))
 
+numbers = [1,15,4,6,25]
+doubled = list(map(lambda x : x * 2 , numbers))
+print(doubled)
+
 print(f'marks are {marks}')
 print(f'grades are {grades}')   
 #print(f'grades are {next(grades)}') 
@@ -62,3 +66,31 @@ print(f'the failing scores are {result}')
 
 result_lambda = list(filter(lambda a: a<60, marks))
 print(f'the failing scores are {result_lambda}')
+
+#sorted (iterable, key, reverse = False) key(used for sort comparision like key = len and reverse are optional
+
+sorted_numbers = sorted(numbers,reverse = True)
+print(sorted_numbers)
+
+letters = ['a', 'z', 'd', 'c']
+sorted_letters = sorted(letters, reverse = True)
+print(sorted_letters)
+
+words = ['hi', 'hello', 'hola', 'welcomen']
+sorted_words = sorted(words, key = len,reverse= True)
+print(sorted_words)
+print(sorted(words,key = lambda x : len(x)))
+
+students = [
+    {"name": "John", "grade": 89},
+    {"name": "Jane", "grade": 85},
+    {"name": "Bob", "grade": 60}
+]
+
+students_1 = [('bob', 90), ('john', 85), ('jane', 93)]
+
+# Sort by the "grade" key in each dictionary
+sorted_students = sorted(students, key=lambda x: x["grade"])
+sorted_students_1 = sorted(students_1, key = lambda x : x[1])
+print(sorted_students)
+print(sorted_students_1)
