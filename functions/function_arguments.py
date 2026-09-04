@@ -39,8 +39,8 @@ def dict_func(details):
     print(details.items())
     print(f'hi, my name is {details['name']}, my age is {details['age']} and I am a {details['occupation']}.')
 
-my_colors = ['red','white','blue']
-list_func(my_colors)
+colors = ['red','white','blue']
+list_func(colors=['red','white','blue'])
 
 my_details = {'name': 'Johndoe', 'age': 25, 'occupation': 'doctor'}
 dict_func(my_details)
@@ -80,7 +80,7 @@ def key(*,name):
     print(f'my name is {name}')
 
 #key('johndoe')
-key(name = 'johndoe')
+key(name ='johndoe')
 
 ####combining positional and keyword only arguments#######
 
