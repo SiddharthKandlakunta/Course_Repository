@@ -7,9 +7,14 @@
 
 # f1 = open('text1.txt','r')
 # print(f1.tell())
+# print(f1.seek(6))
 # print(f1.read())
+
 # print(f1.tell())
 # f1.close()
+
+# f2 = open('text1.txt','w+')
+# print(f2.read())
 
 # with open('text2.txt','a+') as f1:
 #     print(f1.tell())
@@ -19,6 +24,7 @@
 
 # f1 = open('img.jpg','rb+')
 # f2 = open('img_copy.jpg','wb+')
+# print(f1.read())
 # for i in f1:
 #     f2.write(i)
 
